@@ -1,0 +1,133 @@
+:root{
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #d7d7dfed;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
+}
+body {
+  
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    
+    font-family: 'McLaren', cursive !important;
+    line-height: 1.4;
+  }
+
+  .back {
+        /* min-height: calc(100vh - 66px);
+        background: url("./defaultBcg.jpeg") center/cover no-repeat; */
+        background:var(--mainWhite);
+        font-family: 'Lobster', cursive !important;
+        
+        /* display: flex; 
+         align-items: center;  
+          justify-content: center; */
+      }
+
+
+.shop{
+ width: 3rem;
+}
+.navbar{
+    height:15%;
+}
+.ul{
+    display: inline;
+}
+.sacs{
+    background: #4d5052;
+}
+.foot{
+    font-family: 'Lobster', cursive !important;
+  
+}
+.lire{
+    font-family: 'Pacifico', cursive;
+}
+
+/* ---- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: rgb(54, 53, 53);
+    z-index: 1;
+    font-family: 'Anton', sans-serif;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+   
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    color: tomato;
+    margin-left: 30px;
+    border: none;
+    transition: height 2s ease-in-out;
+  }
+  .nav-icon:hover{
+    padding: 30;
+    
+   height: 40px;
+    width: 70px;
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+    list-style-type: none;
+  }
+  .a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: var(--mainSpacing);
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    color: var(--primaryColor);
+  }
+  
+  .show-nav {
+    height: 400px;
+  }
+  @media screen and (min-width: 980px) {
+    .nav-btn {
+      display: none;
+    }
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+    }
+    .nav-links {
+      height: auto;
+      display: flex;
+      margin-left: 10rem;
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      padding: 0.5rem 0;
+    }
+  }
+  .karba{
+    font-family: 'Liu+Jian+Mao+Cao' ;
+    border: 2px solid rgba(226, 201, 60, 0.993);
+  }
+
